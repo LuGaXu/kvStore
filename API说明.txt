@@ -1,0 +1,8 @@
+1、使用时需要修改main函数
+2、命令行输入"python testAPI.py"启动测试
+3、get方法第一个参数是url，需要包括host、port、/process，第二个参数是key
+4、测试put的时候，第一个参数pov_n指kvpod的数量，从1到3, 当pov_n为1时, host和port均为字符串,
+    pov_n大于1时，host和port需为数组，data_n指测试集合的个数，会根据这个个数自动构建键值对，模仿的是
+    pdf里给的格式。
+5、put的测试会模拟随机向一个kvpod传数据
+6、batchput与put同理
